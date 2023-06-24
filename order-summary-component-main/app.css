@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+body {
+    font-family: 'Red Hat Display', sans-serif;/*500 700 900*/
+    background-image: url("images/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+    background-color: var(--pale-blue);
+}
+
+p {
+    font-size: 16px;
+}
+
+
+
+.container {
+    max-width: 400px;
+    background-color: var(--very-pale-blue);
+    margin: 40px auto;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.picture-card {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--dark-blue);
+    font-weight: 700;
+}
+
+.description {
+    text-align: center;
+    margin: 0 20px 20px 20px;
+    line-height: 1.4;
+    font-weight: 500;
+    color: var(--desaturated-blue);
+}
+
+.flex {
+    display: flex;
+    margin: 0 20px 20px 20px;
+    background-color: hsl(240, 6%, 93%);
+    align-items: center;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.icon {
+    margin-right: 20px;
+    margin-left: 10px;
+}
+
+.h {
+    margin-right: 80px;
+    font-weight: 500;
+    color: var(--dark-blue);
+}
+
+span {
+   color: var(--desaturated-blue);
+}
+
+.link {
+    color: var(--bright-blue);
+    font-weight: 700;
+    transition: 0.7s;
+} 
+
+.link:hover {
+    text-decoration: none;
+}
+
+.btns {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-1 {
+    border: none;
+    margin: 0 20px 20px 20px;
+    padding: 15px 0;
+    text-align: center;
+    cursor: pointer;
+    background-color: var(--bright-blue);
+    color: var(--very-pale-blue);
+    font-weight: 900;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: 0.7s;
+} 
+
+.btn-1:hover {
+    opacity: 0.8;
+}
+
+.btn-2 {
+    border: none;
+    margin: 0 20px 20px 20px;
+    padding: 15px 0;
+    text-align: center;
+    cursor: pointer;
+    background-color: transparent;
+    color: var(--desaturated-blue);
+    font-weight: 900;
+    transition: 0.7s;
+} 
+
+.btn-2:hover {
+    color: var(--dark-blue);
+}
